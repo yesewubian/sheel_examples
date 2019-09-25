@@ -1,0 +1,8 @@
+#!/bin/bash
+# a script for select
+echo "select color you prefer"
+select COLOR in red yellow blue
+do
+	break
+done
+echo "you select $COLOR"

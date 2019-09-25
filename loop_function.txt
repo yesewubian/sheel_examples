@@ -1,0 +1,17 @@
+#!/bin/bash
+# 函数的递归调用，打印文件或目录下的所有文件
+function showFile() {
+	if [ -f $1 ]; then
+		echo "$1"
+	elif [ -d $1 ]; then
+		for file in `ls $1`
+		do
+			if [ -d "$1/$file" ]; then
+				showFile $1/$file
+			elif [ -f "$1/$file" ]; then
+				echo "$1/$file"
+			fi
+		done 
+	fi
+}
+showFile $1

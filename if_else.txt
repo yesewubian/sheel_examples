@@ -1,0 +1,8 @@
+#!/bin/bash
+# a test for if else
+read -p 'input filename include path:' FILENAME
+if [ -e "$FILENAME" ]; then
+	echo "$FILENAME is exist"
+else
+	echo "$FILENAME not exist"
+fi

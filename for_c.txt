@@ -1,0 +1,13 @@
+#!/bin/bash
+# a script for for_c
+for (( i=1, j=1; i<=100; i++, j+=2))
+do
+	let "sum_01+=i"
+	if [ "$j" -lt 100 ]; then
+		let "sum_02+=j"
+	fi
+done
+echo "sum_01 value:${sum_01}"
+echo "sum_02 value:${sum_02}"
+unset i
+unset j

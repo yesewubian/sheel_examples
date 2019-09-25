@@ -1,0 +1,12 @@
+#!/bin/bash
+#a test fo if
+read -p "plase input you score:" SCORE
+if [ "$SCORE" -lt 60 ]; then
+	echo "C"
+fi
+if [ "$SCORE" -ge 60 -a "$SCORE" -lt 80 ]; then
+	echo "B"
+fi
+if [ "$SCORE" -ge 90 ]; then
+	echo "A"
+fi

@@ -1,0 +1,7 @@
+#!/bin/bash
+# a script for for
+SCORES="90 22 32 04 34 100"
+for score in $SCORES
+do
+	echo "score is: ${score}"
+done

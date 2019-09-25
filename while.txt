@@ -1,0 +1,8 @@
+#!/bin/bash
+# a script for while
+TIMES=5
+while [ $TIMES -gt 0 ]
+do
+	echo $TIMES
+	let "TIMES-=1"
+done
