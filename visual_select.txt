@@ -1,0 +1,31 @@
+#!/bin/bash
+# Contribution :)
+# A script to show a select visual menu
+
+function menuSelect(){
+    SELECT=$(whiptail --title "Select Menu" --fb --menu "Select your favourite color" 20 60 5 \
+        "Blue" " - Select color Blue" \
+        "Red" " - Select color Red" \
+        "Yellow" " - Select color Yellow" \
+        "Green" " - Select color Green" \
+        "Exit" " - Dont pic a color" 3>&1 1>&2 2>&3)
+    case $SELECT in
+        Blue)
+            whiptail --title "$SELECT" --msgbox "You choose $SELECT the color of sea !" 8 78
+            ;;
+        Red)
+            whiptail --title "$SELECT" --msgbox "You choose $SELECT the color of strawberry !" 8 78
+            ;;
+        Yellow)
+            whiptail --title "$SELECT" --msgbox "You choose $SELECT the color of Sun !" 8 78
+            ;;
+        Green)
+            whiptail --title "$SELECT" --msgbox "You choose $SELECT the color of Forests !" 8 78
+            ;;
+        Exit)
+            whiptail --title "$SELECT" --msgbox "You choose to exit, Have a nice day :)" 8 78
+            ;;
+    esac
+}
+
+menuSelect
