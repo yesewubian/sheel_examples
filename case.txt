@@ -1,6 +1,6 @@
 #!/bin/bash
 #a test fo if
-read -p "plase input you color:" color 
+read -p "Please input you color:" color 
 case "$color" in
 red) echo 'this is red';;
 blue) echo 'this is blue';;

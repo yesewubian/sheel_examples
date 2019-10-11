@@ -1,6 +1,6 @@
 #!/bin/bash
 # a script for select
-echo "select color you prefer"
+echo "Select color you prefer"
 select COLOR in red yellow blue
 do
 	break

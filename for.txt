@@ -3,5 +3,5 @@
 SCORES="90 22 32 04 34 100"
 for score in $SCORES
 do
-	echo "score is: ${score}"
+	echo "Score is: ${score}"
 done
